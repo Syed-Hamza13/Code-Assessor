@@ -1,0 +1,14 @@
+{
+  "name": "code-assessor",
+  "version": "1.0.1",
+  "description": "Auto Assessment tool",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anuj and Hamza",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
