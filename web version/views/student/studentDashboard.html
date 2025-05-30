@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; }
+        header { background: #2d3e50; color: #fff; padding: 20px 0; text-align: center; }
+        .container { max-width: 900px; margin: 30px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 30px; }
+        h2 { color: #2d3e50; }
+        .dashboard-cards { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 30px; }
+        .card {
+            flex: 1 1 200px;
+            background: #f0f3f7;
+            border-radius: 6px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+        .card h3 { margin: 10px 0 5px; color: #1a73e8; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 12px; border-bottom: 1px solid #e0e0e0; text-align: left; }
+        th { background: #f7fafc; }
+        @media (max-width: 700px) {
+            .dashboard-cards { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Dashboard</h1>
+        <p>Welcome, [Student Name]</p>
+    </header>
+    <div class="container">
+        <div class="dashboard-cards">
+            <div class="card">
+                <h3>Assignments</h3>
+                <p>5 Pending</p>
+            </div>
+            <div class="card">
+                <h3>Grades</h3>
+                <p>View Latest</p>
+            </div>
+            <div class="card">
+                <h3>Messages</h3>
+                <p>2 New</p>
+            </div>
+        </div>
+        <h2>Recent Assignments</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Assignment</th>
+                    <th>Status</th>
+                    <th>Due Date</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Project 1</td>
+                    <td>Submitted</td>
+                    <td>2024-06-10</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Quiz 2</td>
+                    <td>Pending</td>
+                    <td>2024-06-15</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Homework 3</td>
+                    <td>Graded</td>
+                    <td>2024-06-05</td>
+                    <td>B+</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

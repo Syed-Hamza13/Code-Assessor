@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Analytics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; }
+        .container { max-width: 900px; margin: 40px auto; background: #fff; padding: 32px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);}
+        h1 { color: #2c3e50; margin-bottom: 24px; }
+        .stats { display: flex; gap: 32px; margin-bottom: 32px; }
+        .stat-card { flex: 1; background: #f1f3f6; padding: 24px; border-radius: 8px; text-align: center; }
+        .stat-value { font-size: 2.2em; color: #2980b9; margin-bottom: 8px; }
+        .chart-section { margin-bottom: 32px; }
+        canvas { background: #fff; border-radius: 8px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 24px; }
+        th, td { padding: 12px; border-bottom: 1px solid #e1e4e8; text-align: left; }
+        th { background: #f6f8fa; }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Student Analytics</h1>
+    <div class="stats">
+        <div class="stat-card">
+            <div class="stat-value" id="totalAssessments">12</div>
+            <div>Total Assessments</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value" id="averageScore">87%</div>
+            <div>Average Score</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value" id="completed">10</div>
+            <div>Completed</div>
+        </div>
+    </div>
+    <div class="chart-section">
+        <h2>Score Progression</h2>
+        <canvas id="scoreChart" height="80"></canvas>
+    </div>
+    <div>
+        <h2>Recent Assessments</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Assessment</th>
+                    <th>Date</th>
+                    <th>Score</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Python Basics</td>
+                    <td>2024-06-01</td>
+                    <td>92%</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>HTML & CSS</td>
+                    <td>2024-05-28</td>
+                    <td>85%</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>JavaScript Fundamentals</td>
+                    <td>2024-05-20</td>
+                    <td>80%</td>
+                    <td>Completed</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script>
+    const ctx = document.getElementById('scoreChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['May 10', 'May 15', 'May 20', 'May 28', 'Jun 1'],
+            datasets: [{
+                label: 'Score (%)',
+                data: [75, 82, 80, 85, 92],
+                borderColor: '#2980b9',
+                backgroundColor: 'rgba(41,128,185,0.1)',
+                fill: true,
+                tension: 0.3,
+                pointRadius: 5,
+                pointBackgroundColor: '#2980b9'
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+                y: { beginAtZero: true, max: 100 }
+            }
+        }
+    });
+</script>
+</body>
+</html>

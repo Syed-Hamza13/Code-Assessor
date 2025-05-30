@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; }
+        header { background: #2c3e50; color: #fff; padding: 20px 40px; }
+        .container { max-width: 1200px; margin: 30px auto; padding: 20px; background: #fff; border-radius: 8px; }
+        h1 { margin: 0; }
+        .dashboard-cards { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 30px; }
+        .card {
+            flex: 1 1 220px;
+            background: #eaf1fb;
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+            text-align: center;
+        }
+        .card h2 { margin: 0 0 10px 0; font-size: 2em; color: #2c3e50; }
+        .card p { margin: 0; color: #34495e; }
+        nav { margin-top: 20px; }
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+        nav a:hover { text-decoration: underline; }
+        @media (max-width: 800px) {
+            .dashboard-cards { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>College Dashboard</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Students</a>
+            <a href="#">Faculty</a>
+            <a href="#">Courses</a>
+            <a href="#">Assessments</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="dashboard-cards">
+            <div class="card">
+                <h2>1,200</h2>
+                <p>Enrolled Students</p>
+            </div>
+            <div class="card">
+                <h2>85</h2>
+                <p>Faculty Members</p>
+            </div>
+            <div class="card">
+                <h2>40</h2>
+                <p>Active Courses</p>
+            </div>
+            <div class="card">
+                <h2>320</h2>
+                <p>Assessments Completed</p>
+            </div>
+        </div>
+        <h2 style="margin-top:40px;">Recent Activities</h2>
+        <ul>
+            <li>New assessment uploaded for Computer Science 101.</li>
+            <li>Faculty meeting scheduled for Friday, 10 AM.</li>
+            <li>Admissions open for the next semester.</li>
+            <li>Results published for Mathematics 201.</li>
+        </ul>
+    </div>
+</body>
+</html>

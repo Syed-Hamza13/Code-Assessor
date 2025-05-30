@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: #2d3e50;
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .nav {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #2d3e50;
+            background: #fff;
+            padding: 12px 24px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .nav a:hover {
+            background: #e0e7ef;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            padding: 32px;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            margin-bottom: 18px;
+            color: #2d3e50;
+        }
+        .dashboard-cards {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: #f7fafc;
+            border-radius: 8px;
+            padding: 24px;
+            flex: 1 1 220px;
+            min-width: 220px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            text-align: center;
+        }
+        .card h2 {
+            margin: 0 0 10px 0;
+            font-size: 2rem;
+            color: #2d3e50;
+        }
+        .card p {
+            margin: 0;
+            color: #6b7280;
+        }
+        @media (max-width: 700px) {
+            .dashboard-cards {
+                flex-direction: column;
+            }
+            .container {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Teacher Dashboard</h1>
+        <div>
+            <span>Welcome, Teacher</span>
+        </div>
+    </div>
+    <nav class="nav">
+        <a href="#">My Classes</a>
+        <a href="#">Assignments</a>
+        <a href="#">Submissions</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+    </nav>
+    <div class="container">
+        <div class="section-title">Overview</div>
+        <div class="dashboard-cards">
+            <div class="card">
+                <h2>5</h2>
+                <p>Active Classes</p>
+            </div>
+            <div class="card">
+                <h2>12</h2>
+                <p>Assignments</p>
+            </div>
+            <div class="card">
+                <h2>87</h2>
+                <p>Submissions</p>
+            </div>
+            <div class="card">
+                <h2>3</h2>
+                <p>Pending Reviews</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
