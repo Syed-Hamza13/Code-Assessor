@@ -13,6 +13,7 @@ const homeRouter = express.Router();
 
 homeRouter.get("/", (req, res, next) => {
     res.sendFile(path.join(rootDir, "views/home/", "index.html"))
+    // res.sendFile(path.join(rootDir, "views/home/", "index.css"))
     
 })
 

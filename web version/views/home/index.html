@@ -1,72 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Code Assessor - Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f8f9fa;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #343a40;
-            color: #fff;
-            padding: 1.5rem 0;
-            text-align: center;
-        }
-        main {
-            max-width: 700px;
-            margin: 2rem auto;
-            background: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-        h1 {
-            margin-top: 0;
-        }
-        .cta-btn {
-            display: inline-block;
-            margin-top: 1.5rem;
-            padding: 0.75rem 2rem;
-            background: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            font-size: 1.1rem;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .cta-btn:hover {
-            background: #0056b3;
-        }
-        footer {
-            text-align: center;
-            color: #888;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <header>
-        <h1>Welcome to Code Assessor</h1>
-        <p>Your automated code assessment tool</p>
+        <nav>
+            <div>logo</div>
+            <div class="nav-link display-flex display-flex-row"> 
+                <a href="#"><div class="display-flex display-flex-column tsc-btn"><img src="teacher-btn-img.png" alt="">Teacher</div></a>
+                <a href="#"><div class="display-flex display-flex-column tsc-btn"><img src="student-btn-img.png" alt="">Student</div></a>
+                <a href="#"><div class="display-flex display-flex-column tsc-btn"><img src="college-btn-img.png" alt="">College</div></a>
+            </div>
+
+        </nav>
     </header>
     <main>
-        <h2>Get Started</h2>
-        <p>
-            Upload your code and receive instant feedback on quality, style, and potential issues.
-            Streamline your code review process and improve your coding skills.
-        </p>
-        <a href="#" class="cta-btn">Upload Code</a>
+        <div class="container display-flex display-flex-column">
+            <div class="hero display-flex display-flex-row">
+                <div class="hero-content display-flex display-flex-column">
+                    <h1>Revolutionizing Coding Education From <br>Copying to Creating</h1>
+                    <h4>A practical coding platform where students learn by doing, and <br>teachers track real progress.</h4>
+                </div>
+                <div class="hero-image">
+                    <img src="hero-section-image.png" alt="Hero Image">
+                </div>
+
+            </div>
+            <div class="features display-flex display-flex-column">
+                <h2>Key Features</h2>
+                <div class="feature-container display-flex display-flex-row">
+                    <div class="features-card display-flex display-flex-column">
+                        <h3>Assign Practicals</h3>
+                        <p>Teachers can post coding practicals by subject. They can also monitor who completed what and how well.</p>
+                    </div>
+                    <div class="features-card display-flex display-flex-column">
+                        <h3>AI-Powered Assistance</h3>
+                        <p>From understanding logic to getting concept explanations, without giving away full answers.</p>
+                    </div>
+                    <div class="features-card display-flex display-flex-column">
+                        <h3>Smart Management</h3>
+                        <p>Colleges can effortlessly onboard teachers and students, assign them to classes, and manage all from a centralized dashboard.</p>
+                    </div>
+                    <div class="features-card display-flex display-flex-column">
+                        <h3>Just Real Practices</h3>
+                        <p>Copy-paste is disabled while coding. Students must type and build code from scratch.</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="work display-flex display-flex-column">
+                <h2>How It Works ?</h2>
+                <div class="work-image">
+                    
+                </div>
+
+            </div>
+            <div class="who display-flex display-flex-column">
+                <h2>Who Is This For ?</h2>
+                <div class="witf-container display-flex display-flex-row">
+                    <div class="witf-card display-flex display-flex-column ">
+                        <h4>For Students</h4>
+                        <div class="witf-card-img witf-card-1">
+
+                        </div>
+                        <p> Learn by practicing, not copying</p>
+                    </div>
+                    <div class="witf-card display-flex display-flex-column ">
+                        <h4>For Colleges</h4>
+                        <div class="witf-card-img witf-card-2">
+
+                        </div>
+                        <p> Elevate your coding curriculum</p>
+                    </div>
+                    <div class="witf-card display-flex display-flex-column ">
+                        <h4>For Teachers</h4>
+                        <div class="witf-card-img witf-card-3">
+
+                        </div>
+                        <p>  Assign, evaluate, and track with ease</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        &copy; 2024 Code Assessor. All rights reserved.
+        <div class="footer-content display-flex display-flex-column">
+            <p>&copy; 2023 Code Assessor. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
     </footer>
 </body>
+
 </html>
