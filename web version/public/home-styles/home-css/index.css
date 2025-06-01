@@ -1,42 +1,48 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #F4FFE3;
     color: #333;
 }
+
 /* utility styling */
 .display-flex {
     display: flex;
 }
+
 .display-flex-row {
     flex-direction: row;
 }
+
 .display-flex-column {
     flex-direction: column;
 }
+
 /* Header */
-nav{
+nav {
     display: flex;
     flex-direction: row;
-    
+
     justify-content: space-between;
     padding: 10px;
     background-color: #bfd7fe;
 }
+
 .nav-link {
     font-size: 20px;
     justify-content: space-around;
     gap: 20px;
 }
+
 .nav-link a {
     text-decoration: none;
-  
 }
+
 .tsc-btn {
     justify-content: center;
     align-items: center;
@@ -50,6 +56,7 @@ nav{
     border-radius: 20px;
 
 }
+
 .tsc-btn:hover {
     background-color: #d1e0f0;
     color: rgb(0, 0, 0);
@@ -58,13 +65,14 @@ nav{
 
 /* Main */
 .container {
-   
+
     /* align-items: center; */
     /* justify-content: center; */
     /* height: 100vh; */
     /* background-color: #d3ff75; */
 
 }
+
 /* hero section */
 .hero {
     justify-content: center;
@@ -73,6 +81,7 @@ nav{
     margin: 20px;
 
 }
+
 .hero-content {
     justify-content: center;
     gap: 12px;
@@ -80,17 +89,20 @@ nav{
     padding: 20px;
 
 }
+
 /* Feature Section */
 .features {
     align-items: center;
 
 }
+
 .feature-container {
     justify-content: space-evenly;
     width: 100%;
     padding: 20px;
 
 }
+
 .features-card {
     gap: 21px;
     align-items: center;
@@ -101,7 +113,7 @@ nav{
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-} 
+}
 
 .features-card h3 {
     color: #fff;
@@ -115,39 +127,42 @@ nav{
     text-align: justify;
     line-height: 24px;
 
-} 
- /* How it Work Section */
+}
 
-.work{
+/* How it Work Section */
+
+.work {
     align-items: center;
     gap: 20px;
     /* height: 100vh; */
     padding: 20px;
     /* background-color: #98cd95; */
 
- }
+}
+
 .work-image {
     width: 1262px;
     height: 511px;
     background-image: url('how-it-works.png');
     background-size: cover;
     background-position: center;
-  
+
 }
 
 /* who is this for section */
 .who {
-    
+
     align-items: center;
     gap: 20px;
     padding: 20px;
     /* background-color: #f0f0f0; */
     height: 100vh;
 }
+
 .witf-container {
     justify-content: space-around;
     align-items: center;
-    width: 100%;  
+    width: 100%;
     background-color: #EAFEF6;
 }
 
@@ -158,21 +173,25 @@ nav{
     margin: 20px;
     gap: 15px;
 }
-.witf-card-img{
+
+.witf-card-img {
     width: 200px;
     height: 200px;
     background-size: cover;
     background-position: center;
     margin-bottom: 10px;
 }
-.witf-card-1{
-background-image: url('who-is-this-for-stu.png');
+
+.witf-card-1 {
+    background-image: url('who-is-this-for-stu.png');
 }
-.witf-card-2{
-background-image: url('who-is-this-for-coll.png');
+
+.witf-card-2 {
+    background-image: url('who-is-this-for-coll.png');
 }
-.witf-card-3{
-background-image: url('who-is-this-for-tea2.png');
+
+.witf-card-3 {
+    background-image: url('who-is-this-for-tea2.png');
 }
 
 /*  Footer Section */
