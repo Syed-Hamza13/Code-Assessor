@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #F4FFE3;
@@ -24,3 +22,11 @@ body {
 .display-flex-column {
     flex-direction: column;
 } 
+
+.text-color-blue1 {
+    color: #5B86E5;
+}
+.text-color-blue2 {
+    color: #5B86E5;
+}
+
