@@ -1,28 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #F4FFE3;
-    color: #333;
-}
-
-/* utility styling */
-.display-flex {
-    display: flex;
-}
-
-.display-flex-row {
-    flex-direction: row;
-}
-
-.display-flex-column {
-    flex-direction: column;
-}
-
 /* Header */
 nav {
     display: flex;
@@ -64,14 +39,7 @@ nav {
 }
 
 /* Main */
-.container {
 
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* height: 100vh; */
-    /* background-color: #d3ff75; */
-
-}
 
 /* hero section */
 .hero {
