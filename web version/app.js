@@ -12,13 +12,13 @@ const teacherRouter = require('./routes/teacherRouter');
 const collegeRouter = require('./routes/collegeRouter');
 const editorRouter = require('./routes/editorRouter');
 
-
+ 
 // Middleware to parse JSON bodies
 app.use(express.json());
 
 // Css Files 
 app.use(express.static(path.join(rootDir, 'public/home-styles/home-css')));
-app.use(express.static(path.join(rootDir, 'public/common-styles/common-style1')));
+app.use(express.static(path.join(rootDir, 'public/common-styles')))
 
 // Images
 app.use(express.static(path.join(rootDir, 'public/home-styles/home-images')));
