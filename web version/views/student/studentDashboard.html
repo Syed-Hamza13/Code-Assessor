@@ -1,83 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Student Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; }
-        header { background: #2d3e50; color: #fff; padding: 20px 0; text-align: center; }
-        .container { max-width: 900px; margin: 30px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 30px; }
-        h2 { color: #2d3e50; }
-        .dashboard-cards { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 30px; }
-        .card {
-            flex: 1 1 200px;
-            background: #f0f3f7;
-            border-radius: 6px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-        }
-        .card h3 { margin: 10px 0 5px; color: #1a73e8; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { padding: 12px; border-bottom: 1px solid #e0e0e0; text-align: left; }
-        th { background: #f7fafc; }
-        @media (max-width: 700px) {
-            .dashboard-cards { flex-direction: column; }
-        }
-    </style>
+    <title>Your Dashboard</title>
+    <link rel="stylesheet" href="studentDashboard.css">
+    <link rel="stylesheet" href="../../public/common-styles/common-style1.css">
 </head>
+
 <body>
     <header>
-        <h1>Student Dashboard</h1>
-        <p>Welcome, [Student Name]</p>
+        <nav>
+            <button class="profile-icon"> </button>
+
+            </button>
+        </nav>
     </header>
-    <div class="container">
-        <div class="dashboard-cards">
-            <div class="card">
-                <h3>Assignments</h3>
-                <p>5 Pending</p>
+    <main>
+        <div class="container display-flex display-flex-column">
+            <div class="greet display-flex display-flex-column">
+                <p> Welcome [Your Name]</p>
+                <p>Let's Complete Some Practicals</p>
             </div>
-            <div class="card">
-                <h3>Grades</h3>
-                <p>View Latest</p>
-            </div>
-            <div class="card">
-                <h3>Messages</h3>
-                <p>2 New</p>
+            <div class="maincontainer display-flex display-flex-row">
+                <div class="practicals display-flex display-flex-column">
+                    <div class="practical-heading display-flex display-flex-row">
+                        <div class="practical-icon"></div>
+                        <h4>Your Practicals</h4>
+                    </div>
+                    <div class="practicals-card-container">
+                        <div class="subject-cards">
+                            <div class="subject-heading display-flex display-flex-column">
+                                <h3> Python</h3>
+                            </div>
+                            <div class="subject-details display-flex display-flex-row">
+                                <div class="subject-complete">
+
+                                </div>
+                                <div class="subject-drop-down">
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="subject-cards">
+                            <div class="subject-heading display-flex display-flex-column">
+                                <h3> Python</h3>
+                            </div>
+                            <div class="subject-details display-flex display-flex-row">
+                                <div class="subject-complete">
+
+                                </div>
+                                <div class="subject-drop-down">
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="subject-cards">
+                            <div class="subject-heading display-flex display-flex-column">
+                                <h3> Python</h3>
+                            </div>
+                            <div class="subject-details display-flex display-flex-row">
+                                <div class="subject-complete">
+
+                                </div>
+                                <div class="subject-drop-down">
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="subject-cards">
+                            <div class="subject-heading display-flex display-flex-column">
+                                <h3> Python</h3>
+                            </div>
+                            <div class="subject-details display-flex display-flex-row">
+                                <div class="subject-complete">
+
+                                </div>
+                                <div class="subject-drop-down">
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="analytics display-flex display-flex-column">
+                    <div class="analytics-header display-flex">
+                        <div class="analytic-heading">
+                            <p>Your Analytics</p>
+                        </div>
+                        <img src="../../public/student-styles/student-images/analytics-icon.png" alt="">
+                    </div>
+                    <div class="progress-container display-flex display-flex-column">
+                        <div class="progress-card display-flex display-flex-row">
+                            <div class="sem-label">Sem : 3rd</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill display-flex display-flex-row">
+                                    <span>Ongoing</span>
+                                </div>
+                            </div>
+                            <a href="#" class="decoration-none">
+                                <div class="arrow">➤</div>
+                            </a>
+                        </div>
+                        <div class="progress-card display-flex display-flex-row">
+                            <div class="sem-label">Sem : 3rd</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill display-flex display-flex-row">
+                                    <span>Ongoing</span>
+                                </div>
+                            </div>
+                            <a href="#" class="decoration-none">
+                                <div class="arrow">➤</div>
+                            </a>
+                        </div>
+                        <div class="progress-card display-flex display-flex-row">
+                            <div class="sem-label">Sem : 3rd</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill display-flex display-flex-row">
+                                    <span>Ongoing</span>
+                                </div>
+                            </div>
+                            <a href="#" class="decoration-none">
+                                <div class="arrow">➤</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <h2>Recent Assignments</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Assignment</th>
-                    <th>Status</th>
-                    <th>Due Date</th>
-                    <th>Grade</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Project 1</td>
-                    <td>Submitted</td>
-                    <td>2024-06-10</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td>Quiz 2</td>
-                    <td>Pending</td>
-                    <td>2024-06-15</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>Homework 3</td>
-                    <td>Graded</td>
-                    <td>2024-06-05</td>
-                    <td>B+</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    </main>
 </body>
+
 </html>

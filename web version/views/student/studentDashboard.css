@@ -1,0 +1,208 @@
+ /* header section */
+ nav {
+     display: flex;
+     flex-direction: row-reverse;
+     padding: 5px;
+     background-color: #bfd7fe;
+ }
+
+ .profile-icon {
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     border: 2px solid #07328e;
+     display: flex;
+     background-image: url('../../public/student-styles/student-images/profileimage.jpg');
+     background-size: cover;
+ }
+
+ /* main section */
+
+ .container {
+     height: 150vh;
+     width: 100%;
+     /* background-color: #07328e; */
+ }
+
+ .greet {
+     width: 100%;
+     /* background-color: #febfd4; */
+     align-items: center;
+     gap: 3px;
+     padding: 10px;
+ }
+
+ .greet :first-child {
+     font-size: 30px;
+     letter-spacing: 2px;
+     font-weight: 700;
+ }
+
+ .greet :last-child {
+     font-size: 16px;
+     font-weight: 500;
+ }
+
+ .maincontainer {
+     height: 120vh;
+     width: 100%;
+     /* background-color: rgb(54, 165, 69); */
+ }
+
+ .practicals {
+     height: 100vh;
+     width: 75%;
+     align-items: center;
+     /* background-color: brown; */
+ }
+
+ .analytics {
+     height: 100vh;
+     width: 25%;
+     background-color: #bfd7fe;
+     border-style: solid;
+     border-width: 2px 0px 0px 2px;
+     border-color: #07328e;
+     border-radius: 10px 0px 0px 0px;
+ }
+
+ .practical-heading {
+
+     /* background-color: rgb(255, 124, 30); */
+     width: 100%;
+
+     padding: 10px 15px;
+     gap: 8px;
+     align-items: center;
+
+ }
+
+ .practical-icon {
+     height: 40px;
+     width: 40px;
+     border-radius: 50%;
+     background-image: url('../../public//student-styles/student-images/practical-icon.png');
+     background-size: cover;
+ }
+
+ .practicals-card-container {
+     width: 90%;
+     /* background-color: rgb(169, 169, 30); */
+     display: grid;
+     align-items: center;
+     justify-content: center;
+     grid-template-columns: 50% 50%;
+     grid-template-rows: auto;
+     /* grid-colum-gap:50px */
+     padding: 20px 40px;
+     column-gap: 20px;
+     row-gap: 15px;
+ }
+ .subject-cards{
+    height: 30vh;
+    width: 100%;
+    padding: 10px;
+    background-color: #bfd7fe;
+    border-radius: 15px;
+ }
+ .subject-heading{
+    height: 50%;
+    align-items: center;
+    /* border-radius: 20px; */
+ }
+
+ .subject-details{
+    justify-content: space-between;
+    align-items: end;
+    height: 50%;
+ }
+ .subject-complete{
+    width: 60px;
+    height: 60px;
+    background-color: #041530;
+ }
+ .subject-drop-down{
+    height: 19px;
+    width: 45px;
+    /* background-color: blueviolet; */
+    background-image: url('../../public/student-styles/student-images/subject-drop-down.png');
+ }
+
+ /* Analytics Section  */
+.analytics-header{
+    flex-direction: row-reverse;
+    width: 100%;
+    /* background-color: #c8ced6; */
+    border-radius: 10px 0px 0px 0px;
+    align-items: center;
+    gap: 10px;
+    padding: 19px;
+}
+.analytic-heading > p{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.progress-container {
+ padding: 10px;
+ gap: 15px;
+}
+
+.progress-card {
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 12px 10px;
+  gap: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.sem-label {
+  font-size: 16px;
+  font-weight: semibold;
+
+}
+
+.progress-bar {
+  height: 18px;
+    width: 67%;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+
+
+}
+
+.progress-fill {
+  background-color: #2effb9;
+  width: 50%; /* Adjust this to change progress */
+  height: 100%;
+  border-radius: 20px;
+ 
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+ 
+}
+.progress-fill > span{
+    font-size: 12px;
+    color: black;
+    font-weight: semibold;
+}
+
+.arrow {
+  font-size: 20px;
+  /* transform: rotate(45deg); To match the image arrow */
+  color: black;
+    cursor: pointer;
+}
+/* .arrow:hover {
+  color: #5B86E5;
+  transform: scale(1.1);
+    transition: transform 0.3s ease;
+} */
+.arrow:active {
+    color: blue;
+}
